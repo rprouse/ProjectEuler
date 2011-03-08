@@ -1,0 +1,23 @@
+<Configuration>
+  <SharedSolutionTemplateManager>
+    <FileTemplates>
+      <Template uid="3272f996-3267-4782-8401-1b266872372e" shortcut="" description="ProblemClass" text="#region Using Directives&#xD;&#xA;&#xD;&#xA;using System;&#xD;&#xA;&#xD;&#xA;#endregion&#xD;&#xA;&#xD;&#xA;namespace $NAMESPACE$&#xD;&#xA;{&#xD;&#xA;   public class $CLASS$ : IProblem&#xD;&#xA;   {&#xD;&#xA;      public int ProblemNumber&#xD;&#xA;      {&#xD;&#xA;         get { return $NUMBER$; }&#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;      public string Description&#xD;&#xA;      {&#xD;&#xA;         get { return &quot;$DESCRIPTION$&quot;; }&#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;      public override string ToString()&#xD;&#xA;      {&#xD;&#xA;         return String.Format( &quot;Problem {0:000}&quot;, ProblemNumber );&#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;      public long Solve()&#xD;&#xA;      {&#xD;&#xA;         return 0;&#xD;&#xA;      }&#xD;&#xA;   }&#xD;&#xA;}&#xD;&#xA;" reformat="True" shortenQualifiedReferences="True">
+        <Context>
+          <ProjectLanguageContext language="CSharp" />
+        </Context>
+        <Categories />
+        <Variables>
+          <Variable name="CLASS" expression="getFileNameWithoutExtension()" initialRange="-1" />
+          <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="-1" />
+          <Variable name="NUMBER" expression="constant()" initialRange="0" />
+          <Variable name="DESCRIPTION" expression="constant()" initialRange="0" />
+        </Variables>
+        <CustomProperties>
+          <Property key="FileName" value="Problem" />
+          <Property key="Extension" value="cs" />
+          <Property key="ValidateFileName" value="True" />
+        </CustomProperties>
+      </Template>
+    </FileTemplates>
+  </SharedSolutionTemplateManager>
+</Configuration>
