@@ -58,19 +58,19 @@ namespace Project.Euler.Problems
                if ( x < 17 )
                {
                   // Horizontal
-                  max = Math.Max( matrix[x, y] * matrix[x + 1, y] * matrix[x + 2, y] * matrix[x + 3, y], max );
+                  max = System.Math.Max( matrix[x, y] * matrix[x + 1, y] * matrix[x + 2, y] * matrix[x + 3, y], max );
                   // Vertical
-                  max = Math.Max( matrix[y, x] * matrix[y, x + 1] * matrix[y, x + 2] * matrix[y, x + 3], max );
+                  max = System.Math.Max( matrix[y, x] * matrix[y, x + 1] * matrix[y, x + 2] * matrix[y, x + 3], max );
                }
                // Diagonal 1
                if ( x < 17 && y < 17 )
                {
-                  max = Math.Max( matrix[x, y] * matrix[x + 1, y + 1] * matrix[x + 2, y + 2] * matrix[x + 3, y + 3], max );
+                  max = System.Math.Max( matrix[x, y] * matrix[x + 1, y + 1] * matrix[x + 2, y + 2] * matrix[x + 3, y + 3], max );
                }
                // Diagonal 2
                if ( x > 2 && y < 17 )
                {
-                  max = Math.Max( matrix[x, y] * matrix[x - 1, y + 1] * matrix[x - 2, y + 2] * matrix[x - 3, y + 3], max );
+                  max = System.Math.Max( matrix[x, y] * matrix[x - 1, y + 1] * matrix[x - 2, y + 2] * matrix[x - 3, y + 3], max );
                }
             }
          }

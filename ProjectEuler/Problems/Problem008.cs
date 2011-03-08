@@ -33,7 +33,7 @@ namespace Project.Euler.Problems
          long max = 0;
          for (int i = 0; i < array.Length - 5; i++)
          {
-            max = Math.Max(array[i]*array[i + 1]*array[i + 2]*array[i + 3]*array[i + 4], max);
+            max = System.Math.Max(array[i]*array[i + 1]*array[i + 2]*array[i + 3]*array[i + 4], max);
          }
          return max;
       }
@@ -49,7 +49,7 @@ namespace Project.Euler.Problems
          long max = 0;
          for ( int i = 0; i < num.Length - 5; i++ )
          {
-            max = Math.Max( ( long )( num[i] - 48 ) * ( long )( num[i + 1] - 48 ) * ( long )( num[i + 2] - 48 ) * ( long )( num[i + 3] - 48 ) * ( long )( num[i + 4] - 48 ), max );
+            max = System.Math.Max( ( long )( num[i] - 48 ) * ( long )( num[i + 1] - 48 ) * ( long )( num[i + 2] - 48 ) * ( long )( num[i + 3] - 48 ) * ( long )( num[i + 4] - 48 ), max );
          }
          return max;
       }

@@ -1,9 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Project.Euler.Math;
 
 namespace Project.Euler.Problems
 {
+   // -----------------------------------------------------------------------------------------------------------------------------
+   // HINTS
+   // -----------------------------------------------------------------------------------------------------------------------------
+   // Let's say you have the primefactorisation of a number:
+   //
+   // 120 = 2^3 * 3^1 * 5^1
+   //
+   // Then you can find the number of divisors of 120 by realizing that you can select a 2 {0,1,2,3} times, a 3 {0,1} times, etc:
+   // so 120 has 4 * 2 * 2 = 16 different divisors.
+   // -----------------------------------------------------------------------------------------------------------------------------
+   // Does this help?
+   // 1+2+3=6=3*2=(3*4)/2
+   // 1+2+3+4=10=2*5=(4*5)/2
+   // 1+2+3+4+5=15=3*5=(5*6)/2
+   // 1+2+3+4+5+6=21=3*7=(6*7)/2
+   // -----------------------------------------------------------------------------------------------------------------------------
+   // Therefore, the n-th triangular number can be defined as (n^2 + n) / 2 or n*(n+1)/2
+   // -----------------------------------------------------------------------------------------------------------------------------
    public class Problem012 : IProblem
    {
       public int ProblemNumber
@@ -23,13 +42,15 @@ namespace Project.Euler.Problems
 
       public long Solve()
       {
-         foreach (uint triangleNumber in TriangleNumbers)
+         uint count = 1;
+         while( true )
          {
-            uint n = NumberOfDivisors(triangleNumber);
-            if ( n > 5 )
+            uint triangleNumber = count*(count + 1)/2;
+            uint n = Divisors.NumberOfDivisors(triangleNumber);
+            if ( n > 500 )
                return triangleNumber;
+            count++;
          }
-         return 0;
       }
 
       private IEnumerable<uint> TriangleNumbers
@@ -45,56 +66,6 @@ namespace Project.Euler.Problems
                value += i;
                yield return value;
             }
-         }
-      }
-
-      private uint NumberOfDivisors( uint n )
-      {
-         List<uint> primeDivisors = new List<uint>( PrimeDivisors( n ) );
-         List<uint> divisors = new List<uint>( primeDivisors );
-         bool found = true;
-         while ( found )
-         {
-            foreach (uint p in primeDivisors)
-            {
-
-            }
-         }
-         return (uint)divisors.Count + 1;
-      }
-
-      private static IEnumerable<uint> PrimeDivisors( uint n )
-      {
-         return Primes( n ).Where(prime => n % prime == 0);
-      }
-
-      public static IEnumerable<uint> Primes( uint max )
-      {
-         yield return 2;
-         List<uint> found = new List<uint>();
-         found.Add( 3 );
-         uint candidate = 3;
-         while ( candidate <= max )
-         {
-            bool isPrime = true;
-            foreach ( uint prime in found )
-            {
-               if ( prime * prime > candidate )
-               {
-                  break;
-               }
-               if ( candidate % prime == 0 )
-               {
-                  isPrime = false;
-                  break;
-               }
-            }
-            if ( isPrime )
-            {
-               found.Add( candidate );
-               yield return candidate;
-            }
-            candidate += 2;
          }
       }
    }
