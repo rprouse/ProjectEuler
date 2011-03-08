@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Math\BigIntTest.cs" />
     <Compile Include="Math\DivisorsTest.cs" />
     <Compile Include="Math\PrimesTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
