@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler", "ProjectEule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Test", "ProjectEuler.Test\ProjectEuler.Test.csproj", "{0F3DE3D7-A9A2-48FF-812E-AB592E2F87EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEulerRunner", "ProjectEulerRunner\ProjectEulerRunner.csproj", "{DABD4672-FA11-4111-A59A-C379FD168B26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{0F3DE3D7-A9A2-48FF-812E-AB592E2F87EB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0F3DE3D7-A9A2-48FF-812E-AB592E2F87EB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{0F3DE3D7-A9A2-48FF-812E-AB592E2F87EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Debug|x86.ActiveCfg = Debug|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Debug|x86.Build.0 = Debug|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Release|Any CPU.ActiveCfg = Release|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Release|x86.ActiveCfg = Release|x86
+		{DABD4672-FA11-4111-A59A-C379FD168B26}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

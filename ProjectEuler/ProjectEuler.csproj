@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,12 +60,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Math\BigInt.cs" />
+    <Compile Include="Math\Fibonacci.cs" />
+    <Compile Include="Math\Utility.cs" />
     <Compile Include="Math\Divisors.cs" />
     <Compile Include="Math\Primes.cs" />
     <Compile Include="Problems\Problem012.cs" />
     <Compile Include="Problems\Problem013.cs" />
     <Compile Include="Problems\Problem014.cs" />
+    <Compile Include="Problems\Problem016.cs" />
     <Compile Include="Problems\Problem020.cs" />
+    <Compile Include="Problems\Problem025.cs" />
     <Compile Include="Problems\ProblemAnswer.cs" />
     <Compile Include="Problems\IProblem.cs" />
     <Compile Include="Problems\Problem011.cs" />

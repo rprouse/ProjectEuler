@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+﻿using MbUnit.Framework;
 using Project.Euler.Math;
 
 namespace ProjectEuler.Test.Math
