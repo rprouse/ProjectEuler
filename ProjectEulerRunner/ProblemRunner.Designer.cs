@@ -49,7 +49,7 @@
          // 
          // pictureBox1
          // 
-         pictureBox1.Image = global::Project.Euler.Properties.Resources.euler;
+         pictureBox1.Image = global::Project.Euler.Runner.Properties.Resources.euler;
          pictureBox1.Location = new System.Drawing.Point( 12, 12 );
          pictureBox1.Name = "pictureBox1";
          pictureBox1.Size = new System.Drawing.Size( 203, 71 );

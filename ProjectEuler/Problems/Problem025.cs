@@ -1,6 +1,8 @@
 #region Using Directives
 
 using System;
+using System.Numerics;
+using Project.Euler.Math;
 
 #endregion
 
@@ -25,7 +27,14 @@ namespace Project.Euler.Problems
 
         public long Solve()
         {
-            return 0;
+            long count = 0;
+            foreach ( BigInteger i in Fibonacci.Values )
+            {
+                count++;
+                if ( i.ToString().Length >= 1000 )
+                    break;
+            }
+            return count;
         }
     }
 }

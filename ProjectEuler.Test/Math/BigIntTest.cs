@@ -28,6 +28,7 @@ namespace ProjectEuler.Test.Math
          Assert.AreEqual( expected, bi.ToString() );
       }
 
+      [Test]
       [Row( "", "", "0" )]
       [Row( "0", "0", "0" )]
       [Row( "0", "1", "1" )]

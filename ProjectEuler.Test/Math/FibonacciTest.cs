@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Numerics;
-using System.Text;
-using Gallio.Framework;
+﻿using System.Numerics;
 using MbUnit.Framework;
-using MbUnit.Framework.ContractVerifiers;
 using Project.Euler.Math;
 
 namespace ProjectEuler.Test.Math

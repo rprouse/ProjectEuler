@@ -13,6 +13,7 @@ namespace ProjectEuler.Test.Math
    [TestFixture]
    public class DivisorsTest
    {
+      [Test]
       [Row( 1U, new uint[] { } )]
       [Row( 3U, new[] { 3U } )]
       [Row( 6U, new[] { 2U,3U } )]
@@ -30,6 +31,7 @@ namespace ProjectEuler.Test.Math
          }
       }
 
+      [Test]
       [Row( 1U, new[] { 1U } )]
       [Row( 3U, new[] { 1U, 3U } )]
       [Row( 6U, new[] { 1U, 2U, 3U, 6U } )]
@@ -47,6 +49,7 @@ namespace ProjectEuler.Test.Math
          }
       }
 
+      [Test]
       [Row( 1U, 1U )]
       [Row( 3U, 2U )]
       [Row( 6U, 4U )]
