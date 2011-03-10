@@ -59,5 +59,22 @@ namespace Project.Euler.Math
             }
             return n - (i*count);
         }
+
+        /// <summary>
+        /// Truncates the left digit off a number 1234 => 234
+        /// </summary>
+        /// <param name="n">The n.</param>
+        /// <returns></returns>
+        public static long TruncateLeft( long n )
+        {
+            long count = 1;
+            long i = n;
+            while ( i > 9 )
+            {
+                count *= 10;
+                i /= 10;
+            }
+            return n - (i * count);
+        }
     }
 }
