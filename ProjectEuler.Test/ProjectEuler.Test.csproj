@@ -53,6 +53,7 @@
     <Compile Include="Math\DivisorsTest.cs" />
     <Compile Include="Math\PrimesTest.cs" />
     <Compile Include="Math\FibonacciTest.cs" />
+    <Compile Include="Math\UtilityTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
